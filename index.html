@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R&D Nutriton</title>
+    <link rel="icon" type="image/x-icon" href="logo_title.png">
+    <link rel="stylesheet" type="text/css" href="styles.css" title="Stiluri">
+</head>
+
+<body>
+  <!-- ------------------------partea de menu---------------->
+  <map name="home_map">
+    <area
+      href="index.html" alt="Home" shape="rect" coords="0,0,200,200">
+  </map>
+
+  <div>
+    <nav class="menu">
+      <ul class="menu-left">
+        <li><img src="R&D_logo.png" alt="logo" height="100%" width="100%" usemap="#home_map"></li>
+        <li><a href="nutritie.html">Nutriție Sportivă</a></li>
+        <li><a href="echipamente.html">Echipamente Fitness</a></li>
+      </ul> 
+      <ul class="menu-right">
+        <li>
+          <form action="cautare.html" method="GET">
+            <input type="text" name="text" class="search" placeholder="Cautare produse!">
+            <input type="submit" name="submit" class="submit" value="Cautare">
+          </form></li>
+          <li><button onclick="window.location.href= 'cos.html'">
+            <img src="cart.png" alt="Cart">
+            </li>
+          <li><button onclick="window.location.href='login.html'">
+            <img src="login.png" alt="Login">
+          </button></li>
+      </ul>
+    </nav>
+  </div>
+<!----------------------partea de slideshow-------- -->
+  <div class="slideshow">
+    <div class="slide">
+        <img src="slide1.png" alt="slide1">
+    </div>
+
+    <div class="slide">
+        <img src="slide4.png" alt="slide4">
+    </div>
+
+    <div class="slide">
+        <img src="slide3.png" alt="slide3">
+    </div>
+    
+    <div class="slide">
+        <img src="slide2.png" alt="slide2">
+    </div>
+
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+   
+  </div>
+
+         
+</body>
+</html>

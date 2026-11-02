@@ -1,0 +1,186 @@
+/****************************************Menu***************************************/
+.menu{
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  background-color: #4e0901;
+  border-width: 1px 0;
+  list-style: none;
+  display: flex;
+  justify-content:space-between;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.menu-left li, .menu-right li{
+  list-style: none;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-right: 5px;
+}
+.menu-left a{
+  padding: 45px;
+  color:white;
+  background-color: #4e0901;
+  text-decoration:none;
+  display: block;
+  font-size: 20px;
+  border-radius: 25px;
+}
+.menu-right{
+  vertical-align: middle;
+}
+.menu-left img{
+  width: 150px;
+  border-radius: 25px;
+}
+
+.menu-right button{
+  width: 55px;
+  height: 55px;
+  border-radius: 15px;
+  vertical-align: middle;
+  margin: 5px;
+}
+.menu-right button img{
+  width: 40px;
+  height: 40px;
+ 
+}
+a:hover,button:hover {
+  background-color:#a81403;
+  transition: background-color 0.3s;
+}
+/****************************************Menu***************************************/
+.slideshow img{
+  width: 100%;
+}
+
+/*************************************Cautare******************************************/
+form {
+  width: 400px;
+  display: flex;
+}
+input {
+  padding: 4px 10px;
+  border: 2;
+  font-size: 16px;
+  border-radius: 10px;
+}
+.search {
+  width: 75%;
+}
+.submit {
+  width: 80px;
+  background-color: #a81403;
+  color: #ffffff;
+}
+/*********************************Card-wall**********************************************/
+.wall{
+  padding-left: 20%;
+  padding-top: 2%;
+}
+.wall .card{
+  display: inline-block;
+  margin-right: 1%;
+  margin-top: 2%;
+}
+
+/*********************************Card**********************************************/
+.prod_img{
+  width: 60%;
+}
+.card {
+  box-shadow: 0 4px 8px 0 gray;
+  border-radius: 25px;
+  width: 20%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 50%;
+}
+.price {
+  color: grey;
+  font-size: 20px;
+}
+.card button {
+  border-radius: 25px;
+  padding: 10px;
+  color: white;
+  background-color: #4e0901;
+  text-align: center;
+  width: 50%;
+  font-size: 20px;
+}
+.card button:hover {
+  background-color: #a81403;
+}
+h2{
+  font-size: 20px;
+  min-height: 3em; /* 3 * dimensiunea fontului */
+}
+/*********************************Aside*********************************************/
+@keyframes scroll_slide{
+  from{
+    transform: translateY(0);
+  }
+  to{
+    transform: translateY(100%);
+  }
+}
+
+.aside{
+  float: left;
+  align-content: center;
+  max-width: 12%;
+}
+.aside_slide img{
+  opacity: 40%;
+  width: 100%;
+  animation: 20s scroll_slide infinite linear;
+}
+
+
+
+/*******************************LOGIN*********************************************************/
+
+.login-form-container {
+  background-color: white; 
+  align-items: center;
+  padding: 30px; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 12px gray; 
+  width: 300px; 
+  height: 300px;
+  display: flex;
+  overflow: hidden;
+  
+}
+
+.login-title {
+  font-size: 24px;
+  margin-bottom: 20px; 
+  font-weight: bold; 
+}
+
+.login-form-container input {
+  margin-bottom: 15px; 
+  padding: 10px; 
+  width: 100%; 
+  border: 1px solid #ccc; 
+  border-radius: 10px; 
+  font-size: 16px;
+}
+
+.login-button {
+  padding: 12px 24px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #4e0901; 
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #a81403;
+}

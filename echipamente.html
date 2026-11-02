@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echipamente Fitness</title>
+    <link rel="icon" type="image/x-icon" href="logo_title.png">
+    <link rel="stylesheet" type="text/css"
+      href="styles.css" title="Stiluri">
+</head>
+    
+<body>
+  <!-- ------------------------partea de menu---------------->
+  <map name="home_map">
+    <area
+      href="index.html" alt="Home" shape="rect" coords="8,21,143,119">
+  </map>
+
+  <div>
+    <nav class="menu">
+      <ul class="menu-left">
+        <li><img src="R&D_logo.png" alt="logo" height="100%" width="100%" usemap="#home_map"></li>
+        <li><a href="nutritie.html">Nutriție Sportivă</a></li>
+        <li><a href="echipamente.html">Echipamente Fitness</a></li>
+      </ul> 
+      <ul class="menu-right">
+        <li>
+          <form action="cautare.html" method="GET">
+            <input type="text" name="text" class="search" placeholder="Cautare produse!">
+            <input type="submit" name="submit" class="submit" value="Cautare">
+          </form></li>
+          <li><button onclick="window.location.href= 'cos.html'">
+            <img src="cart.png" alt="Cart">
+          <li><button onclick="window.location.href='login.html'">
+            <img src="login.png" alt="Login">
+          </button></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="aside">
+    <div class="aside_slide">
+      <img src="logo_gb.png" alt="logo_gb">
+      <img src="logo_aplnutr.png" alt="logo_aplnutr">
+      <img src="logo_ostrovit.png" alt="logo_ostrovit">
+      <img src="logo_weider.png" alt="logo_weider">
+      <img src="logo_allnutrition.png" alt="logo_allnutrition">
+      <img src="logo_gb.png" alt="logo_gb">
+      <img src="logo_aplnutr.png" alt="logo_aplnutr">
+      <img src="logo_ostrovit.png" alt="logo_ostrovit">
+      <img src="logo_weider.png" alt="logo_weider">
+      <img src="logo_allnutrition.png" alt="logo_allnutrition">
+      <img src="logo_gb.png" alt="logo_gb">
+      <img src="logo_aplnutr.png" alt="logo_aplnutr">
+      <img src="logo_ostrovit.png" alt="logo_ostrovit">
+      <img src="logo_weider.png" alt="logo_weider">
+      <img src="logo_allnutrition.png" alt="logo_allnutrition">
+  
+    </div>
+  </div>
+  <div class="wall">
+    <div class="card">
+      <img src="tricou-gri.png" alt="tricou-gri" class="prod_img">
+      <h2>Tricou Basic Dark Grey</h2>
+      <p class="price">51.90 Ron</p>
+      <p><button onclick="addToCart('Tricou Basic Dark Grey', 51.9)">Add to Cart</button></p>
+    </div>
+
+    <div class="card">
+      <img src="pantaloni-scurti-gri.png" alt="Pantaloni scurti" class="prod_img">       
+      <h2>Șort Vertical Grey</h2>
+      <p class="price">66.90 Ron</p>
+      <p><button onclick="addToCart('Șort Vertical Grey', 66.9)">Add to Cart</button></p>
+    </div>
+
+    <div class="card">
+      <img src="maiou-negru-cut.png" alt="Maiou Cut Off Blacky" class="prod_img">
+      <h2>Maiou Cut Off Blacky</h2>
+      <p class="price">61.90 Ron</p>
+       <p><button onclick="addToCart('Maiou Cut Off Blacky', 61.9)">Add to Cart</button></p>
+    </div>
+
+    <div class="card">
+      <img src="hanorac-rosu.png" alt="Șort Vertical Grey" class="prod_img">      
+      <h2>Hanorac PRO Rosu</h2>
+      <p class="price">102.90 Ron</p>
+      <p><button onclick="addToCart('Hanorac Rosu', 102.9)">Add to Cart</button></p>
+    </div>
+
+    <div class="card">
+      <img src="tricou-alb.png" alt="Tricou Alb" class="prod_img">
+      <h2>Tricou FIT White</h2>
+      <p class="price">45.90 Ron</p>
+      <p><button onclick="addToCart('Tricou Fit White', 102.9)">Add to Cart</button></p>
+    </div>
+
+      <div class="card">
+        <img src="tricou-albastru.png" alt="Tricou Blue" class="prod_img">
+        <h2>Tricou FIT Blue</h2>
+        <p class="price">51.90 Ron</p>
+        <p><button onclick="addToCart('Tricou Fit Blue', 51.9)">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="sosete-albe-lungi.png" alt="Sosete Albe" class="prod_img">
+        <h2>Șosete ¾ Socks 3Pack White</h2>
+        <p class="price">51.90 Ron</p>
+        <p><button onclick="addToCart('Sosete Albe', 51.9)">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="sosete-gri-lungi.png" alt="Sosete Gri" class="prod_img">
+        <h2>Șosete ¾ Socks 3Pack Gray</h2>
+        <p class="price">51.90 Ron</p>
+        <p><button onclick="addToCart('Sosete Gri', 51.9)">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="tricou-negru-animal.png" alt="Tricou-negru-Animal" class="prod_img">
+        <h2>Tricou Fit Black Animal</h2>
+        <p class="price">84.90 Ron</p>
+        <p><button onclick="addToCart('Tricou Negru Animal', 84.90)">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="masca-neagra.png" alt="Masca-neagra" class="prod_img">
+        <h2>Cagula Neagra GymBeam</h2>
+        <p class="price">35.90 Ron</p>
+        <p><button onclick="addToCart('Masca Neagra', 35.90)">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="tricou-compresie-alb.png" alt="Masca-compresie-alb" class="prod_img">
+        <h2>Cagula Neagra GymBeam</h2>
+        <p class="price">95.90 Ron</p>
+        <p><button onclick="addToCart('Tricou Compresie Alb', 95.90)">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="maiou-albastru.png" alt="maiou-gymbeam-blue" class="prod_img">
+        <h2>Maiou GymBeam Blue</h2>
+        <p class="price">35.90 Ron</p>
+        <p><button onclick="addToCart('Maiou GymBeam Blue', 95.90)">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="shaker-steel.png" alt="shaker-steel" class="prod_img">
+        <h2>Shaker Steel 750 ml</h2>
+        <p class="price">39.90 Ron</p>
+        <p><button onclick="addToCart('Shaker Steel 750 ml', 39.90)">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="bandaj_maini.png" alt="bandaj_maini" class="prod_img">
+        <h2>Bandaj pentru încheietura mâinii </h2>
+        <p class="price">34.90 Ron</p>
+        <p><button onclick="addToCart('Bandaj pentru încheietura mâinii', 34.90)">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="ps-yoga-mat.png" alt="ps-yoga-mat" class="prod_img">
+        <h2>Saltea Yoga Mat </h2>
+        <p class="price">89.00 Ron</p>
+        <p><button onclick="addToCart('Saltea Yoga Mat', 89.00)">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="ps-manusi-ultiamte-motivation.png" alt="ps-manusi-ultiamte-motivation" class="prod_img">
+        <h2>Manusi Fitness Ultimate Motivation </h2>
+        <p class="price">79.50 Ron</p>
+        <p><button onclick="addToCart('Manusi Fitness Ultimate Motivation', 79.50)">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="ps-centura-stronglift.png" alt="ps-centura-stronglift" class="prod_img">
+        <h2>Centura Powerlifting Stronglift </h2>
+        <p class="price">199.99 Ron</p>
+        <p><button onclick="addToCart('Centura Powerlifting Stronglift', 199.99)">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="psroller.png" alt="psroller" class="prod_img">
+        <h2>Rola pentru exercitii - Fitness Roller </h2>
+        <p class="price">99.99 Ron</p>
+        <p><button onclick="addToCart('Rola pentru exercitii - Fitness Roller', 99.99)">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="Wheighted_vest.png" alt="Wheighted_vest" class="prod_img">
+        <h2>Weighted Vest, 10kg, Power System </h2>
+        <p class="price">299.99 Ron</p>
+        <p><button onclick="addToCart('Weighted Vest, 10kg, Power System', 299.99)">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="PS-FAT-GRIPZ.png" alt="PS-FAT-GRIPZ" class="prod_img">
+        <h2>Fat Gripz</h2>
+        <p class="price">89,00 Ron</p>
+        <p><button onclick="addToCart('Fat Gripz', 89.00)">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="ostrovit-push-up-board.png" alt="ostrovit-push-up-board" class="prod_img">
+        <h2>Placa pentru flotari Ostrovit</h2>
+        <p class="price">80,00 Ron</p>
+        <p><button onclick="addToCart('Placa pentru flotari, Ostrovit', 80.00)">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="ps-push-up-stand.png" alt="ps-push-up-stand" class="prod_img">
+        <h2>Suport pentru flotari</h2>
+        <p class="price">52,00 Ron</p>
+        <p><button onclick="addToCart('Suport Pentru Flotari', 52.00)">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="flexor.png" alt="flexor" class="prod_img">
+        <h2>Flexor Reglabil</h2>
+        <p class="price">49,00 Ron</p>
+        <p><button onclick="addToCart('Flexor', 49.00)">Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img src="ps-ab-wheel.png" alt="ps-ab-wheel" class="prod_img">
+        <h2>Roata pentru abdomen Dual Core</h2>
+        <p class="price">45,00 Ron</p>
+        <p><button onclick="addToCart('Roata pentru abdomen Dual Core', 45.00)">Add to Cart</button></p>
+      </div>
+    </div>
+
+    <script>
+      function addToCart(productName,productPrice)
+      {
+          let cart=JSON.parse(localStorage.getItem("cart"))||[];
+          cart.push({name:productName,price:productPrice});
+          localStorage.setItem("cart", JSON.stringify(cart));
+          alert(productName + " a fost adăugat în coș!");
+      }
+  </script>
+
+</body>
